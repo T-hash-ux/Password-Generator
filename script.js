@@ -24,10 +24,13 @@ function writePassword() {
 }
 
 function generatePassword() {
-  // PASSWORD GENERATED BASED ON PROMPT
-
+  // I would generatePassword based on the prompts
 }
 
 function getPrompts(){
+  charlength = parseInt(prompt("How many character would you like for your password? (8 -128 characters"));
 
+  if(isNaN(charlength) || charlength < 8 || charlength > 128) {
+      alert("Character length has to be a number, 8 - 128 digits. Please try again.")
+  }
 }
