@@ -1,3 +1,4 @@
+//Assigned my variables using arrays.
 var charLength = 8;
 var choiceArr = [];
 
@@ -16,7 +17,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-    var accuratePrompts = getPrompts();  //either true or false
+    var accuratePrompts = getPrompts();  // will return either true or false
     var passwordText = document.querySelector("#password");
     
     if (accuratePrompts) {
@@ -39,7 +40,7 @@ function generatePassword() {
   }
   return password;
 }
-
+// added another function for the prompts that the user will see when they press the button.
 function getPrompts(){
   choiceArr =[];
 
